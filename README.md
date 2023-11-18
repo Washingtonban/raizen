@@ -12,6 +12,10 @@ Elaborar uma aplicação de backend utilizando a linguagem de programação Pyth
 
 ## Ambiente do projeto
 
+### .env
+
+Existe um arquivo com o exemplo de como vc deve fazer o seu arquivo .env, o arquivo é o env.example
+
 ### Pyenv
 
 O pyenv é um versionador de Python, é uma etapa opcional, mas muito recomendada para quem sua MacOs.
@@ -102,3 +106,8 @@ Obs: se vc precisar baixar o banco, roda esse comando:
 ```bash
 make db-down
 ```
+
+
+
+#### Endereço do swagger
+http://127.0.0.1:5000/ 
