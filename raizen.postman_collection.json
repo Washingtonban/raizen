@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "a5beccd8-fa9a-4b7a-a12a-ee58e949b28f",
+		"name": "raizen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9358394"
+	},
+	"item": [
+		{
+			"name": "openweathermap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/weather?q=Manaus&appid=6543594afec381ce441ca52dda10cd52&units=metric",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Manaus"
+						},
+						{
+							"key": "appid",
+							"value": "6543594afec381ce441ca52dda10cd52"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Caua\",\n  \"email\": \"washington@curitiba.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/weather/Florianopolis",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"weather",
+						"Florianopolis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get with parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/weather/Curitiba?nome=Washington&email=washington@curitiba.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"weather",
+						"Curitiba"
+					],
+					"query": [
+						{
+							"key": "cidade",
+							"value": "Curitiba",
+							"disabled": true
+						},
+						{
+							"key": "nome",
+							"value": "Washington"
+						},
+						{
+							"key": "email",
+							"value": "washington@curitiba.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get without parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/weather",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "cidade",
+							"value": "Curitiba",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

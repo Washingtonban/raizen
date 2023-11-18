@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Flask = "*"
+python-dotenv = "*"
+Flask-RESTPlus = "*"
+Werkzeug = "==0.16.1"
+MarkupSafe = "==1.1.1"
+pymongo = "*"
+requests = "*"
+coverage = "*"
+pytest = "*"
+pytest-mock = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+python_full_version = "3.8.11"

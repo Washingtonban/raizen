@@ -1,0 +1,30 @@
+# raizen
+
+###
+# @name openweathermap
+GET http://api.openweathermap.org/data/2.5/weather?
+    q=Manaus&
+    appid=6543594afec381ce441ca52dda10cd52&
+    units=metric
+
+###
+# @name Post
+POST http://127.0.0.1:5000/weather/Florianopolis
+Content-Type: application/json
+
+{
+  "nome": "Caua",
+  "email": "washington@curitiba.com"
+}
+
+###
+# @name Get with parameters
+GET http://127.0.0.1:5000/weather/Curitiba?
+    cidade=Curitiba&
+    nome=Washington&
+    email=washington@curitiba.com
+
+###
+# @name Get without parameters
+GET http://127.0.0.1:5000/weather?
+    cidade=Curitiba
